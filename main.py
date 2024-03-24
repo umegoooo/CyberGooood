@@ -89,7 +89,6 @@ def banana(A, B, C, D):
 # 逐帧处理
 while True:
     success, img = capture.read()
-    img = poseDetector.findPose(img)
     # img = cv2.flip(img, flipCode=1)
     # 镜像语句
     lmList, bboxInfo = poseDetector.findPosition(img)
